@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoWebShop Regression Suite">
+
+    <listeners>
+        <!-- takes a screenshot whenever a test fails -->
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+
+    <test name="Demo Web Shop Tests">
+        <classes>
+            <class name="testcases.RegistrationTest"/>
+            <class name="testcases.LoginTest"/>
+            <class name="testcases.SearchTest"/>
+            <class name="testcases.ProductDetailsTest"/>
+            <class name="testcases.CartTest"/>
+            <class name="testcases.CheckoutTest"/>
+            <class name="testcases.OrderConfirmationTest"/>
+        </classes>
+    </test>
+</suite>
