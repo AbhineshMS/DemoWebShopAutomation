@@ -1,0 +1,574 @@
+<html>
+<head>
+<title>TestNG:  Demo Web Shop Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Demo Web Shop Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 26 20:31:31 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>600 seconds (600844 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.CheckoutTest.testBillingAddressMandatoryFields()'><b>testBillingAddressMandatoryFields</b><br>Test class: testcases.CheckoutTest<br>Test method: NEGATIVE: Billing address with empty mandatory fields shows errors</td>
+<td><div><pre>java.lang.AssertionError: Errors were: Country is required. | City is required | Street address is required | Zip / postal code is required | Phone is required |  expected [true] but found [false]
+	at testcases.CheckoutTest.testBillingAddressMandatoryFields(CheckoutTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace626183040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace626183040'><pre>java.lang.AssertionError: Errors were: Country is required. | City is required | Street address is required | Zip / postal code is required | Phone is required |  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at testcases.CheckoutTest.testBillingAddressMandatoryFields(CheckoutTest.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>12</td>
+<td>testcases.CheckoutTest@460d0a57</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLogin()'><b>testLogin</b><br>Test class: testcases.LoginTest<br>Test method: Login with multiple credentials read from Excel<br>Parameters: LG05, invalid-email-format, Test@1234, ERROR, Wrong email|Login was unsuccessful</td>
+<td><div><pre>java.lang.AssertionError: Expected message to contain one of [Wrong email|Login was unsuccessful] but was: [Please enter a valid email address. | ]
+	at utils.DataUtils.assertContainsAny(DataUtils.java:25)
+	at testcases.LoginTest.testLogin(LoginTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace344500321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace344500321'><pre>java.lang.AssertionError: Expected message to contain one of [Wrong email|Login was unsuccessful] but was: [Please enter a valid email address. | ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at utils.DataUtils.assertContainsAny(DataUtils.java:25)
+	at testcases.LoginTest.testLogin(LoginTest.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>1</td>
+<td>testcases.LoginTest@79b06cab</td></tr>
+<tr>
+<td title='testcases.SearchTest.testSearchWithTooShortKeyword()'><b>testSearchWithTooShortKeyword</b><br>Test class: testcases.SearchTest<br>Test method: NEGATIVE: keyword shorter than 3 characters</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.search-results strong.result, div.warning (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59575}, goog:processID: 14404, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59575/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f35613666a56460c443079223df12275
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtils.waitForVisible(WaitUtils.java:28)
+	at pages.BasePage.getText(BasePage.java:42)
+	at pages.SearchResultsPage.getMessage(SearchResultsPage.java:39)
+	at testcases.SearchTest.testSearchWithTooShortKeyword(SearchTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace700081136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace700081136'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.search-results strong.result, div.warning (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59575}, goog:processID: 14404, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59575/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f35613666a56460c443079223df12275
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtils.waitForVisible(WaitUtils.java:28)
+	at pages.BasePage.getText(BasePage.java:42)
+	at pages.SearchResultsPage.getMessage(SearchResultsPage.java:39)
+	at testcases.SearchTest.testSearchWithTooShortKeyword(SearchTest.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>16</td>
+<td>testcases.SearchTest@3eb7fc54</td></tr>
+<tr>
+<td title='testcases.CartTest.testCartContents()'><b>testCartContents</b><br>Test class: testcases.CartTest<br>Test method: Cart shows the product, price, quantity and total that were added</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: tr.order-total span.product-price (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59861}, goog:processID: 4664, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59861/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 903cf34d8210436b52c934e0288c047a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtils.waitForVisible(WaitUtils.java:28)
+	at pages.BasePage.getText(BasePage.java:42)
+	at pages.CartPage.getOrderTotal(CartPage.java:53)
+	at testcases.CartTest.testCartContents(CartTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1795451038", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1795451038'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: tr.order-total span.product-price (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59861}, goog:processID: 4664, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59861/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 903cf34d8210436b52c934e0288c047a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtils.waitForVisible(WaitUtils.java:28)
+	at pages.BasePage.getText(BasePage.java:42)
+	at pages.CartPage.getOrderTotal(CartPage.java:53)
+	at testcases.CartTest.testCartContents(CartTest.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>20</td>
+<td>testcases.CartTest@3c22fc4c</td></tr>
+<tr>
+<td title='testcases.OrderConfirmationTest.testPlaceOrderSuccessfully()'><b>testPlaceOrderSuccessfully</b><br>Test class: testcases.OrderConfirmationTest<br>Test method: Complete checkout flow ends with an order confirmation and an order number</td>
+<td><div><pre>java.lang.AssertionError: Order 2405670 not found in order history expected [true] but found [false]
+	at testcases.OrderConfirmationTest.testPlaceOrderSuccessfully(OrderConfirmationTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace557030255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace557030255'><pre>java.lang.AssertionError: Order 2405670 not found in order history expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at testcases.OrderConfirmationTest.testPlaceOrderSuccessfully(OrderConfirmationTest.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>23</td>
+<td>testcases.OrderConfirmationTest@47d90b9e</td></tr>
+<tr>
+<td title='testcases.CartTest.testUpdateQuantity()'><b>testUpdateQuantity</b><br>Test class: testcases.CartTest<br>Test method: Update quantity to 3 -> line total becomes 30.00</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: tr.order-total span.product-price (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59947}, goog:processID: 10056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59947/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc28145e7db95d37d553dfe2283fc9e6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtils.waitForVisible(WaitUtils.java:28)
+	at pages.BasePage.getText(BasePage.java:42)
+	at pages.CartPage.getOrderTotal(CartPage.java:53)
+	at testcases.CartTest.testUpdateQuantity(CartTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace266571038", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace266571038'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: tr.order-total span.product-price (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59947}, goog:processID: 10056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59947/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc28145e7db95d37d553dfe2283fc9e6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitUtils.waitForVisible(WaitUtils.java:28)
+	at pages.BasePage.getText(BasePage.java:42)
+	at pages.CartPage.getOrderTotal(CartPage.java:53)
+	at testcases.CartTest.testUpdateQuantity(CartTest.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>20</td>
+<td>testcases.CartTest@3c22fc4c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.ProductDetailsTest.testNonExistentProductPage()'><b>testNonExistentProductPage</b><br>Test class: testcases.ProductDetailsTest<br>Test method: NEGATIVE: a product URL that does not exist shows a 'not found' page</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDetailsTest@7f552bd3</td></tr>
+<tr>
+<td title='testcases.CheckoutTest.testCheckoutWithoutAcceptingTerms()'><b>testCheckoutWithoutAcceptingTerms</b><br>Test class: testcases.CheckoutTest<br>Test method: NEGATIVE: Checkout without accepting the terms of service is blocked</td>
+<td></td>
+<td>7</td>
+<td>testcases.CheckoutTest@460d0a57</td></tr>
+<tr>
+<td title='testcases.SearchTest.testSearchWithValidKeyword()'><b>testSearchWithValidKeyword</b><br>Test class: testcases.SearchTest<br>Test method: Search finds the expected product<br>Parameters: Simple Computer, Simple Computer</td>
+<td></td>
+<td>1</td>
+<td>testcases.SearchTest@3eb7fc54</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLogin()'><b>testLogin</b><br>Test class: testcases.LoginTest<br>Test method: Login with multiple credentials read from Excel<br>Parameters: LG01, REGISTERED_EMAIL, REGISTERED_PASSWORD, SUCCESS, </td>
+<td></td>
+<td>7</td>
+<td>testcases.LoginTest@79b06cab</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLogin()'><b>testLogin</b><br>Test class: testcases.LoginTest<br>Test method: Login with multiple credentials read from Excel<br>Parameters: LG06, REGISTERED_EMAIL, , ERROR, Login was unsuccessful|credentials provided are incorrect</td>
+<td></td>
+<td>7</td>
+<td>testcases.LoginTest@79b06cab</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLoginPageOpens()'><b>testLoginPageOpens</b><br>Test class: testcases.LoginTest<br>Test method: Login page opens from the header link</td>
+<td></td>
+<td>0</td>
+<td>testcases.LoginTest@79b06cab</td></tr>
+<tr>
+<td title='testcases.SearchTest.testSearchWithEmptyKeyword()'><b>testSearchWithEmptyKeyword</b><br>Test class: testcases.SearchTest<br>Test method: NEGATIVE: empty search shows an alert</td>
+<td></td>
+<td>0</td>
+<td>testcases.SearchTest@3eb7fc54</td></tr>
+<tr>
+<td title='testcases.CheckoutTest.testGuestIsAskedToLoginAtCheckout()'><b>testGuestIsAskedToLoginAtCheckout</b><br>Test class: testcases.CheckoutTest<br>Test method: NEGATIVE: A guest is asked to log in / register / continue as guest</td>
+<td></td>
+<td>6</td>
+<td>testcases.CheckoutTest@460d0a57</td></tr>
+<tr>
+<td title='testcases.SearchTest.testSortBooksByPriceLowToHigh()'><b>testSortBooksByPriceLowToHigh</b><br>Test class: testcases.SearchTest<br>Test method: FILTER: Books sorted by price low to high are in ascending order</td>
+<td></td>
+<td>3</td>
+<td>testcases.SearchTest@3eb7fc54</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLogout()'><b>testLogout</b><br>Test class: testcases.LoginTest<br>Test method: Logging out returns the user to the guest state</td>
+<td></td>
+<td>3</td>
+<td>testcases.LoginTest@79b06cab</td></tr>
+<tr>
+<td title='testcases.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: testcases.RegistrationTest<br>Test method: Register with valid and invalid data read from Excel<br>Parameters: REG04, M, Abhi, , RANDOM, Test@1234, Test@1234, ERROR, Last name is required</td>
+<td></td>
+<td>1</td>
+<td>testcases.RegistrationTest@5dd6264</td></tr>
+<tr>
+<td title='testcases.CartTest.testAddToCartWithZeroQuantity()'><b>testAddToCartWithZeroQuantity</b><br>Test class: testcases.CartTest<br>Test method: NEGATIVE: Add to cart with quantity 0 is rejected</td>
+<td></td>
+<td>5</td>
+<td>testcases.CartTest@3c22fc4c</td></tr>
+<tr>
+<td title='testcases.RegistrationTest.testRegisterPageOpens()'><b>testRegisterPageOpens</b><br>Test class: testcases.RegistrationTest<br>Test method: Register page opens from the header link</td>
+<td></td>
+<td>1</td>
+<td>testcases.RegistrationTest@5dd6264</td></tr>
+<tr>
+<td title='testcases.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: testcases.RegistrationTest<br>Test method: Register with valid and invalid data read from Excel<br>Parameters: REG02, F, Anu, Tester, RANDOM, Test@1234, Test@1234, SUCCESS, Your registration completed</td>
+<td></td>
+<td>4</td>
+<td>testcases.RegistrationTest@5dd6264</td></tr>
+<tr>
+<td title='testcases.OrderConfirmationTest.testCartIsEmptyAfterOrder()'><b>testCartIsEmptyAfterOrder</b><br>Test class: testcases.OrderConfirmationTest<br>Test method: After the order the cart is empty again</td>
+<td></td>
+<td>19</td>
+<td>testcases.OrderConfirmationTest@47d90b9e</td></tr>
+<tr>
+<td title='testcases.SearchTest.testSearchWithValidKeyword()'><b>testSearchWithValidKeyword</b><br>Test class: testcases.SearchTest<br>Test method: Search finds the expected product<br>Parameters: computer, Build your own computer</td>
+<td></td>
+<td>1</td>
+<td>testcases.SearchTest@3eb7fc54</td></tr>
+<tr>
+<td title='testcases.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: testcases.RegistrationTest<br>Test method: Register with valid and invalid data read from Excel<br>Parameters: REG05, M, Abhi, Tester, , Test@1234, Test@1234, ERROR, Email is required</td>
+<td></td>
+<td>1</td>
+<td>testcases.RegistrationTest@5dd6264</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLogin()'><b>testLogin</b><br>Test class: testcases.LoginTest<br>Test method: Login with multiple credentials read from Excel<br>Parameters: LG02, REGISTERED_EMAIL, WrongPass@999, ERROR, Login was unsuccessful|credentials provided are incorrect</td>
+<td></td>
+<td>7</td>
+<td>testcases.LoginTest@79b06cab</td></tr>
+<tr>
+<td title='testcases.CartTest.testEmptyCart()'><b>testEmptyCart</b><br>Test class: testcases.CartTest<br>Test method: A new visitor sees an empty cart</td>
+<td></td>
+<td>1</td>
+<td>testcases.CartTest@3c22fc4c</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLogin()'><b>testLogin</b><br>Test class: testcases.LoginTest<br>Test method: Login with multiple credentials read from Excel<br>Parameters: LG03, no.such.user.98765@example.com, Test@1234, ERROR, Login was unsuccessful|No customer account found</td>
+<td></td>
+<td>7</td>
+<td>testcases.LoginTest@79b06cab</td></tr>
+<tr>
+<td title='testcases.ProductDetailsTest.testProductDetailsAreCorrect()'><b>testProductDetailsAreCorrect</b><br>Test class: testcases.ProductDetailsTest<br>Test method: Product page shows correct name, price, image and Add to cart button</td>
+<td></td>
+<td>5</td>
+<td>testcases.ProductDetailsTest@7f552bd3</td></tr>
+<tr>
+<td title='testcases.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: testcases.RegistrationTest<br>Test method: Register with valid and invalid data read from Excel<br>Parameters: REG03, M, , Tester, RANDOM, Test@1234, Test@1234, ERROR, First name is required</td>
+<td></td>
+<td>1</td>
+<td>testcases.RegistrationTest@5dd6264</td></tr>
+<tr>
+<td title='testcases.ProductDetailsTest.testProductPageTitle()'><b>testProductPageTitle</b><br>Test class: testcases.ProductDetailsTest<br>Test method: Browser tab title contains the product name</td>
+<td></td>
+<td>8</td>
+<td>testcases.ProductDetailsTest@7f552bd3</td></tr>
+<tr>
+<td title='testcases.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: testcases.RegistrationTest<br>Test method: Register with valid and invalid data read from Excel<br>Parameters: REG09, M, Abhi, Tester, abhineshabhi01@gmail.com, Test@1234, Test@1234, ERROR, already exists</td>
+<td></td>
+<td>2</td>
+<td>testcases.RegistrationTest@5dd6264</td></tr>
+<tr>
+<td title='testcases.LoginTest.testLogin()'><b>testLogin</b><br>Test class: testcases.LoginTest<br>Test method: Login with multiple credentials read from Excel<br>Parameters: LG04, , , ERROR, Login was unsuccessful|No customer account found|Please enter your email</td>
+<td></td>
+<td>6</td>
+<td>testcases.LoginTest@79b06cab</td></tr>
+<tr>
+<td title='testcases.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: testcases.RegistrationTest<br>Test method: Register with valid and invalid data read from Excel<br>Parameters: REG06, M, Abhi, Tester, not-an-email, Test@1234, Test@1234, ERROR, Wrong email</td>
+<td></td>
+<td>2</td>
+<td>testcases.RegistrationTest@5dd6264</td></tr>
+<tr>
+<td title='testcases.CartTest.testUpdateQuantityToZero()'><b>testUpdateQuantityToZero</b><br>Test class: testcases.CartTest<br>Test method: NEGATIVE/EDGE: setting quantity to 0 removes the item</td>
+<td></td>
+<td>7</td>
+<td>testcases.CartTest@3c22fc4c</td></tr>
+<tr>
+<td title='testcases.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: testcases.RegistrationTest<br>Test method: Register with valid and invalid data read from Excel<br>Parameters: REG07, M, Abhi, Tester, RANDOM, 123, 123, ERROR, at least 6 characters</td>
+<td></td>
+<td>1</td>
+<td>testcases.RegistrationTest@5dd6264</td></tr>
+<tr>
+<td title='testcases.CartTest.testAddToCart()'><b>testAddToCart</b><br>Test class: testcases.CartTest<br>Test method: Add a product to the cart from its details page</td>
+<td></td>
+<td>11</td>
+<td>testcases.CartTest@3c22fc4c</td></tr>
+<tr>
+<td title='testcases.SearchTest.testSearchWithNoMatch()'><b>testSearchWithNoMatch</b><br>Test class: testcases.SearchTest<br>Test method: NEGATIVE: keyword that matches nothing</td>
+<td></td>
+<td>1</td>
+<td>testcases.SearchTest@3eb7fc54</td></tr>
+<tr>
+<td title='testcases.SearchTest.testSearchWithValidKeyword()'><b>testSearchWithValidKeyword</b><br>Test class: testcases.SearchTest<br>Test method: Search finds the expected product<br>Parameters: Computing, Computing and Internet</td>
+<td></td>
+<td>1</td>
+<td>testcases.SearchTest@3eb7fc54</td></tr>
+<tr>
+<td title='testcases.CartTest.testRemoveFromCart()'><b>testRemoveFromCart</b><br>Test class: testcases.CartTest<br>Test method: Remove the only item -> cart becomes empty</td>
+<td></td>
+<td>7</td>
+<td>testcases.CartTest@3c22fc4c</td></tr>
+<tr>
+<td title='testcases.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: testcases.RegistrationTest<br>Test method: Register with valid and invalid data read from Excel<br>Parameters: REG01, M, Abhi, Tester, RANDOM, Test@1234, Test@1234, SUCCESS, Your registration completed</td>
+<td></td>
+<td>4</td>
+<td>testcases.RegistrationTest@5dd6264</td></tr>
+<tr>
+<td title='testcases.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: testcases.RegistrationTest<br>Test method: Register with valid and invalid data read from Excel<br>Parameters: REG08, M, Abhi, Tester, RANDOM, Test@1234, Different@99, ERROR, do not match</td>
+<td></td>
+<td>1</td>
+<td>testcases.RegistrationTest@5dd6264</td></tr>
+</table><p>
+</body>
+</html>

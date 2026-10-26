@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoWebShop Regression Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utils.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Demo Web Shop Tests(failed)" verbose="0">
+    <classes>
+      <class name="testcases.SearchTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testSearchWithTooShortKeyword"/>
+        </methods>
+      </class> <!-- testcases.SearchTest -->
+      <class name="testcases.OrderConfirmationTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testPlaceOrderSuccessfully"/>
+        </methods>
+      </class> <!-- testcases.OrderConfirmationTest -->
+      <class name="testcases.CartTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testCartContents"/>
+          <include name="testUpdateQuantity"/>
+        </methods>
+      </class> <!-- testcases.CartTest -->
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testLogin" invocation-numbers="4"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.CheckoutTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testBillingAddressMandatoryFields"/>
+        </methods>
+      </class> <!-- testcases.CheckoutTest -->
+    </classes>
+  </test> <!-- Demo Web Shop Tests(failed) -->
+</suite> <!-- Failed suite [DemoWebShop Regression Suite] -->

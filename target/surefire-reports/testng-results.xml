@@ -1,0 +1,1419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="40" passed="34" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-26T20:31:31 IST" name="DemoWebShop Regression Suite" finished-at="2026-10-26T20:41:32 IST" duration-ms="600844">
+    <groups>
+    </groups>
+    <test started-at="2026-10-26T20:31:31 IST" name="Demo Web Shop Tests" finished-at="2026-10-26T20:41:32 IST" duration-ms="600844">
+      <class name="testcases.ProductDetailsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ProductDetailsTest@7f552bd3]" started-at="2026-10-26T20:37:02 IST" name="setUp" finished-at="2026-10-26T20:37:08 IST" duration-ms="5645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNonExistentProductPage()[pri:0, instance:testcases.ProductDetailsTest@7f552bd3]" started-at="2026-10-26T20:37:08 IST" name="testNonExistentProductPage" description="NEGATIVE: a product URL that does not exist shows a &#039;not found&#039; page" finished-at="2026-10-26T20:37:08 IST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNonExistentProductPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ProductDetailsTest@7f552bd3]" started-at="2026-10-26T20:37:08 IST" name="tearDown" finished-at="2026-10-26T20:37:09 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ProductDetailsTest@7f552bd3]" started-at="2026-10-26T20:37:09 IST" name="setUp" finished-at="2026-10-26T20:37:13 IST" duration-ms="4837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testProductDetailsAreCorrect()[pri:0, instance:testcases.ProductDetailsTest@7f552bd3]" started-at="2026-10-26T20:37:13 IST" name="testProductDetailsAreCorrect" description="Product page shows correct name, price, image and Add to cart button" finished-at="2026-10-26T20:37:19 IST" duration-ms="5485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductDetailsAreCorrect -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ProductDetailsTest@7f552bd3]" started-at="2026-10-26T20:37:19 IST" name="tearDown" finished-at="2026-10-26T20:37:19 IST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ProductDetailsTest@7f552bd3]" started-at="2026-10-26T20:37:19 IST" name="setUp" finished-at="2026-10-26T20:37:31 IST" duration-ms="11256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testProductPageTitle()[pri:0, instance:testcases.ProductDetailsTest@7f552bd3]" started-at="2026-10-26T20:37:31 IST" name="testProductPageTitle" description="Browser tab title contains the product name" finished-at="2026-10-26T20:37:39 IST" duration-ms="8342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ProductDetailsTest@7f552bd3]" started-at="2026-10-26T20:37:39 IST" name="tearDown" finished-at="2026-10-26T20:37:39 IST" duration-ms="366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.ProductDetailsTest -->
+      <class name="testcases.OrderConfirmationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.OrderConfirmationTest@47d90b9e]" started-at="2026-10-26T20:40:35 IST" name="setUp" finished-at="2026-10-26T20:40:39 IST" duration-ms="4325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartIsEmptyAfterOrder()[pri:0, instance:testcases.OrderConfirmationTest@47d90b9e]" started-at="2026-10-26T20:40:39 IST" name="testCartIsEmptyAfterOrder" description="After the order the cart is empty again" finished-at="2026-10-26T20:40:59 IST" duration-ms="19680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartIsEmptyAfterOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.OrderConfirmationTest@47d90b9e]" started-at="2026-10-26T20:40:59 IST" name="tearDown" finished-at="2026-10-26T20:41:00 IST" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.OrderConfirmationTest@47d90b9e]" started-at="2026-10-26T20:41:00 IST" name="setUp" finished-at="2026-10-26T20:41:07 IST" duration-ms="6977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPlaceOrderSuccessfully()[pri:0, instance:testcases.OrderConfirmationTest@47d90b9e]" started-at="2026-10-26T20:41:07 IST" name="testPlaceOrderSuccessfully" description="Complete checkout flow ends with an order confirmation and an order number" finished-at="2026-10-26T20:41:31 IST" duration-ms="23979" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Order 2405670 not found in order history expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Order 2405670 not found in order history expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.OrderConfirmationTest.testPlaceOrderSuccessfully(OrderConfirmationTest.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlaceOrderSuccessfully -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.OrderConfirmationTest@47d90b9e]" started-at="2026-10-26T20:41:31 IST" name="tearDown" finished-at="2026-10-26T20:41:32 IST" duration-ms="1052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.OrderConfirmationTest -->
+      <class name="testcases.CartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:37:39 IST" name="setUp" finished-at="2026-10-26T20:37:47 IST" duration-ms="7356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddToCart()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:37:47 IST" name="testAddToCart" description="Add a product to the cart from its details page" finished-at="2026-10-26T20:37:58 IST" duration-ms="11064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:37:58 IST" name="tearDown" finished-at="2026-10-26T20:37:58 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:37:58 IST" name="setUp" finished-at="2026-10-26T20:38:05 IST" duration-ms="6997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddToCartWithZeroQuantity()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:05 IST" name="testAddToCartWithZeroQuantity" description="NEGATIVE: Add to cart with quantity 0 is rejected" finished-at="2026-10-26T20:38:11 IST" duration-ms="5879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCartWithZeroQuantity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:11 IST" name="tearDown" finished-at="2026-10-26T20:38:11 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:11 IST" name="setUp" finished-at="2026-10-26T20:38:17 IST" duration-ms="5794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartContents()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:17 IST" name="testCartContents" description="Cart shows the product, price, quantity and total that were added" finished-at="2026-10-26T20:38:38 IST" duration-ms="20967" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: tr.order-total span.product-price (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59861}, goog:processID: 4664, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59861/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 903cf34d8210436b52c934e0288c047a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: tr.order-total span.product-price (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59861}, goog:processID: 4664, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59861/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 903cf34d8210436b52c934e0288c047a
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utils.WaitUtils.waitForVisible(WaitUtils.java:28)
+at pages.BasePage.getText(BasePage.java:42)
+at pages.CartPage.getOrderTotal(CartPage.java:53)
+at testcases.CartTest.testCartContents(CartTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartContents -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:38 IST" name="tearDown" finished-at="2026-10-26T20:38:38 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:38 IST" name="setUp" finished-at="2026-10-26T20:38:44 IST" duration-ms="5981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyCart()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:44 IST" name="testEmptyCart" description="A new visitor sees an empty cart" finished-at="2026-10-26T20:38:46 IST" duration-ms="1042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:46 IST" name="tearDown" finished-at="2026-10-26T20:38:46 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:46 IST" name="setUp" finished-at="2026-10-26T20:38:51 IST" duration-ms="5126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRemoveFromCart()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:51 IST" name="testRemoveFromCart" description="Remove the only item -&gt; cart becomes empty" finished-at="2026-10-26T20:38:59 IST" duration-ms="7564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:59 IST" name="tearDown" finished-at="2026-10-26T20:38:59 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:38:59 IST" name="setUp" finished-at="2026-10-26T20:39:06 IST" duration-ms="7540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUpdateQuantity()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:39:06 IST" name="testUpdateQuantity" description="Update quantity to 3 -&gt; line total becomes 30.00" finished-at="2026-10-26T20:39:27 IST" duration-ms="20606" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: tr.order-total span.product-price (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59947}, goog:processID: 10056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59947/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc28145e7db95d37d553dfe2283fc9e6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: tr.order-total span.product-price (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59947}, goog:processID: 10056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59947/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc28145e7db95d37d553dfe2283fc9e6
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utils.WaitUtils.waitForVisible(WaitUtils.java:28)
+at pages.BasePage.getText(BasePage.java:42)
+at pages.CartPage.getOrderTotal(CartPage.java:53)
+at testcases.CartTest.testUpdateQuantity(CartTest.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateQuantity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:39:27 IST" name="tearDown" finished-at="2026-10-26T20:39:27 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:39:27 IST" name="setUp" finished-at="2026-10-26T20:39:40 IST" duration-ms="12616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUpdateQuantityToZero()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:39:40 IST" name="testUpdateQuantityToZero" description="NEGATIVE/EDGE: setting quantity to 0 removes the item" finished-at="2026-10-26T20:39:47 IST" duration-ms="7214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateQuantityToZero -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CartTest@3c22fc4c]" started-at="2026-10-26T20:39:47 IST" name="tearDown" finished-at="2026-10-26T20:39:48 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.CartTest -->
+      <class name="testcases.CheckoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CheckoutTest@460d0a57]" started-at="2026-10-26T20:39:48 IST" name="setUp" finished-at="2026-10-26T20:39:56 IST" duration-ms="8783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBillingAddressMandatoryFields()[pri:0, instance:testcases.CheckoutTest@460d0a57]" started-at="2026-10-26T20:39:56 IST" name="testBillingAddressMandatoryFields" description="NEGATIVE: Billing address with empty mandatory fields shows errors" finished-at="2026-10-26T20:40:09 IST" duration-ms="12285" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Errors were: Country is required. | City is required | Street address is required | Zip / postal code is required | Phone is required |  expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Errors were: Country is required. | City is required | Street address is required | Zip / postal code is required | Phone is required |  expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testcases.CheckoutTest.testBillingAddressMandatoryFields(CheckoutTest.java:55)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBillingAddressMandatoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CheckoutTest@460d0a57]" started-at="2026-10-26T20:40:09 IST" name="tearDown" finished-at="2026-10-26T20:40:09 IST" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CheckoutTest@460d0a57]" started-at="2026-10-26T20:40:09 IST" name="setUp" finished-at="2026-10-26T20:40:15 IST" duration-ms="5504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckoutWithoutAcceptingTerms()[pri:0, instance:testcases.CheckoutTest@460d0a57]" started-at="2026-10-26T20:40:15 IST" name="testCheckoutWithoutAcceptingTerms" description="NEGATIVE: Checkout without accepting the terms of service is blocked" finished-at="2026-10-26T20:40:22 IST" duration-ms="7207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutWithoutAcceptingTerms -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CheckoutTest@460d0a57]" started-at="2026-10-26T20:40:22 IST" name="tearDown" finished-at="2026-10-26T20:40:22 IST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CheckoutTest@460d0a57]" started-at="2026-10-26T20:40:22 IST" name="setUp" finished-at="2026-10-26T20:40:29 IST" duration-ms="6341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGuestIsAskedToLoginAtCheckout()[pri:0, instance:testcases.CheckoutTest@460d0a57]" started-at="2026-10-26T20:40:29 IST" name="testGuestIsAskedToLoginAtCheckout" description="NEGATIVE: A guest is asked to log in / register / continue as guest" finished-at="2026-10-26T20:40:35 IST" duration-ms="6137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGuestIsAskedToLoginAtCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CheckoutTest@460d0a57]" started-at="2026-10-26T20:40:35 IST" name="tearDown" finished-at="2026-10-26T20:40:35 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.CheckoutTest -->
+      <class name="testcases.SearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:35:51 IST" name="setUp" finished-at="2026-10-26T20:35:56 IST" duration-ms="4812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchWithEmptyKeyword()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:35:56 IST" name="testSearchWithEmptyKeyword" description="NEGATIVE: empty search shows an alert" finished-at="2026-10-26T20:35:56 IST" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchWithEmptyKeyword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:35:56 IST" name="tearDown" finished-at="2026-10-26T20:35:57 IST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:35:57 IST" name="setUp" finished-at="2026-10-26T20:36:02 IST" duration-ms="5464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchWithNoMatch()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:02 IST" name="testSearchWithNoMatch" description="NEGATIVE: keyword that matches nothing" finished-at="2026-10-26T20:36:03 IST" duration-ms="1351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchWithNoMatch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:03 IST" name="tearDown" finished-at="2026-10-26T20:36:04 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:04 IST" name="setUp" finished-at="2026-10-26T20:36:13 IST" duration-ms="9414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchWithTooShortKeyword()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:13 IST" name="testSearchWithTooShortKeyword" description="NEGATIVE: keyword shorter than 3 characters" finished-at="2026-10-26T20:36:29 IST" duration-ms="16261" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: div.search-results strong.result, div.warning (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59575}, goog:processID: 14404, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59575/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f35613666a56460c443079223df12275]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.search-results strong.result, div.warning (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 155.0.8059.86, chrome: {chromedriverVersion: 155.0.8059.84 (5869fe313571..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59575}, goog:processID: 14404, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59575/devtoo..., se:cdpVersion: 155.0.8059.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f35613666a56460c443079223df12275
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utils.WaitUtils.waitForVisible(WaitUtils.java:28)
+at pages.BasePage.getText(BasePage.java:42)
+at pages.SearchResultsPage.getMessage(SearchResultsPage.java:39)
+at testcases.SearchTest.testSearchWithTooShortKeyword(SearchTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchWithTooShortKeyword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:29 IST" name="tearDown" finished-at="2026-10-26T20:36:30 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:30 IST" name="setUp" finished-at="2026-10-26T20:36:35 IST" duration-ms="5105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchWithValidKeyword(java.lang.String,java.lang.String)[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:35 IST" name="testSearchWithValidKeyword" description="Search finds the expected product" data-provider="searchKeywords" finished-at="2026-10-26T20:36:36 IST" duration-ms="1356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Computing]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Computing and Internet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchWithValidKeyword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:36 IST" name="tearDown" finished-at="2026-10-26T20:36:37 IST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:37 IST" name="setUp" finished-at="2026-10-26T20:36:44 IST" duration-ms="6925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchWithValidKeyword(java.lang.String,java.lang.String)[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:44 IST" name="testSearchWithValidKeyword" description="Search finds the expected product" data-provider="searchKeywords" finished-at="2026-10-26T20:36:45 IST" duration-ms="1232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Simple Computer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Simple Computer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchWithValidKeyword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:45 IST" name="tearDown" finished-at="2026-10-26T20:36:45 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:45 IST" name="setUp" finished-at="2026-10-26T20:36:51 IST" duration-ms="6342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchWithValidKeyword(java.lang.String,java.lang.String)[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:51 IST" name="testSearchWithValidKeyword" description="Search finds the expected product" data-provider="searchKeywords" finished-at="2026-10-26T20:36:53 IST" duration-ms="1347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[computer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Build your own computer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchWithValidKeyword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:53 IST" name="tearDown" finished-at="2026-10-26T20:36:53 IST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:53 IST" name="setUp" finished-at="2026-10-26T20:36:59 IST" duration-ms="5424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSortBooksByPriceLowToHigh()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:36:59 IST" name="testSortBooksByPriceLowToHigh" description="FILTER: Books sorted by price low to high are in ascending order" finished-at="2026-10-26T20:37:02 IST" duration-ms="3161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortBooksByPriceLowToHigh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@3eb7fc54]" started-at="2026-10-26T20:37:02 IST" name="tearDown" finished-at="2026-10-26T20:37:02 IST" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.SearchTest -->
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:33:38 IST" name="setUp" finished-at="2026-10-26T20:33:48 IST" duration-ms="10501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:33:48 IST" name="testLogin" description="Login with multiple credentials read from Excel" data-provider="loginData" finished-at="2026-10-26T20:33:55 IST" duration-ms="7055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LG01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[REGISTERED_EMAIL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[REGISTERED_PASSWORD]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:33:55 IST" name="tearDown" finished-at="2026-10-26T20:33:56 IST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:33:56 IST" name="setUp" finished-at="2026-10-26T20:34:33 IST" duration-ms="37058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:34:33 IST" name="testLogin" description="Login with multiple credentials read from Excel" data-provider="loginData" finished-at="2026-10-26T20:34:40 IST" duration-ms="7300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LG02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[REGISTERED_EMAIL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[WrongPass@999]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Login was unsuccessful|credentials provided are incorrect]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:34:40 IST" name="tearDown" finished-at="2026-10-26T20:34:41 IST" duration-ms="413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:34:41 IST" name="setUp" finished-at="2026-10-26T20:34:50 IST" duration-ms="9573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:34:50 IST" name="testLogin" description="Login with multiple credentials read from Excel" data-provider="loginData" finished-at="2026-10-26T20:34:57 IST" duration-ms="7283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LG03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[no.such.user.98765@example.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Login was unsuccessful|No customer account found]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:34:57 IST" name="tearDown" finished-at="2026-10-26T20:34:58 IST" duration-ms="356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:34:58 IST" name="setUp" finished-at="2026-10-26T20:35:03 IST" duration-ms="5499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:03 IST" name="testLogin" description="Login with multiple credentials read from Excel" data-provider="loginData" finished-at="2026-10-26T20:35:10 IST" duration-ms="6995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LG04]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Login was unsuccessful|No customer account found|Please enter your email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:10 IST" name="tearDown" finished-at="2026-10-26T20:35:11 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:11 IST" name="setUp" finished-at="2026-10-26T20:35:19 IST" duration-ms="8552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:19 IST" name="testLogin" description="Login with multiple credentials read from Excel" data-provider="loginData" finished-at="2026-10-26T20:35:20 IST" duration-ms="1196" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LG05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid-email-format]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Wrong email|Login was unsuccessful]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected message to contain one of [Wrong email|Login was unsuccessful] but was: [Please enter a valid email address. | ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected message to contain one of [Wrong email|Login was unsuccessful] but was: [Please enter a valid email address. | ]
+at org.testng.Assert.fail(Assert.java:111)
+at utils.DataUtils.assertContainsAny(DataUtils.java:25)
+at testcases.LoginTest.testLogin(LoginTest.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:21 IST" name="tearDown" finished-at="2026-10-26T20:35:21 IST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:21 IST" name="setUp" finished-at="2026-10-26T20:35:26 IST" duration-ms="5396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:26 IST" name="testLogin" description="Login with multiple credentials read from Excel" data-provider="loginData" finished-at="2026-10-26T20:35:33 IST" duration-ms="7051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LG06]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[REGISTERED_EMAIL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Login was unsuccessful|credentials provided are incorrect]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:33 IST" name="tearDown" finished-at="2026-10-26T20:35:34 IST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:34 IST" name="setUp" finished-at="2026-10-26T20:35:40 IST" duration-ms="6366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginPageOpens()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:40 IST" name="testLoginPageOpens" description="Login page opens from the header link" finished-at="2026-10-26T20:35:41 IST" duration-ms="765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageOpens -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:41 IST" name="tearDown" finished-at="2026-10-26T20:35:41 IST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:41 IST" name="setUp" finished-at="2026-10-26T20:35:47 IST" duration-ms="6260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogout()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:47 IST" name="testLogout" description="Logging out returns the user to the guest state" finished-at="2026-10-26T20:35:51 IST" duration-ms="3269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@79b06cab]" started-at="2026-10-26T20:35:51 IST" name="tearDown" finished-at="2026-10-26T20:35:51 IST" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.RegistrationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:31:31 IST" name="setUp" finished-at="2026-10-26T20:31:42 IST" duration-ms="10579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegisterPageOpens()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:31:42 IST" name="testRegisterPageOpens" description="Register page opens from the header link" finished-at="2026-10-26T20:31:43 IST" duration-ms="1042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterPageOpens -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:31:43 IST" name="tearDown" finished-at="2026-10-26T20:31:43 IST" duration-ms="506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:31:45 IST" name="setUp" finished-at="2026-10-26T20:31:52 IST" duration-ms="7798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:31:52 IST" name="testRegistration" description="Register with valid and invalid data read from Excel" data-provider="registrationData" finished-at="2026-10-26T20:31:57 IST" duration-ms="4230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[REG01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abhi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tester]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[RANDOM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Your registration completed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:31:57 IST" name="tearDown" finished-at="2026-10-26T20:31:57 IST" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:31:57 IST" name="setUp" finished-at="2026-10-26T20:32:16 IST" duration-ms="18599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:16 IST" name="testRegistration" description="Register with valid and invalid data read from Excel" data-provider="registrationData" finished-at="2026-10-26T20:32:20 IST" duration-ms="4743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[REG02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Anu]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tester]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[RANDOM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Your registration completed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:20 IST" name="tearDown" finished-at="2026-10-26T20:32:21 IST" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:21 IST" name="setUp" finished-at="2026-10-26T20:32:33 IST" duration-ms="11540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:33 IST" name="testRegistration" description="Register with valid and invalid data read from Excel" data-provider="registrationData" finished-at="2026-10-26T20:32:35 IST" duration-ms="1929" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[REG03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tester]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[RANDOM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[First name is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:35 IST" name="tearDown" finished-at="2026-10-26T20:32:35 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:35 IST" name="setUp" finished-at="2026-10-26T20:32:44 IST" duration-ms="8633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:44 IST" name="testRegistration" description="Register with valid and invalid data read from Excel" data-provider="registrationData" finished-at="2026-10-26T20:32:45 IST" duration-ms="1772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[REG04]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abhi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[RANDOM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Last name is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:45 IST" name="tearDown" finished-at="2026-10-26T20:32:46 IST" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:46 IST" name="setUp" finished-at="2026-10-26T20:32:57 IST" duration-ms="10948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:57 IST" name="testRegistration" description="Register with valid and invalid data read from Excel" data-provider="registrationData" finished-at="2026-10-26T20:32:58 IST" duration-ms="1907" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[REG05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abhi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tester]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Email is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:58 IST" name="tearDown" finished-at="2026-10-26T20:32:59 IST" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:32:59 IST" name="setUp" finished-at="2026-10-26T20:33:05 IST" duration-ms="5804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:33:05 IST" name="testRegistration" description="Register with valid and invalid data read from Excel" data-provider="registrationData" finished-at="2026-10-26T20:33:07 IST" duration-ms="2112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[REG06]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abhi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tester]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[not-an-email]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Wrong email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:33:07 IST" name="tearDown" finished-at="2026-10-26T20:33:07 IST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:33:07 IST" name="setUp" finished-at="2026-10-26T20:33:13 IST" duration-ms="5768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:33:13 IST" name="testRegistration" description="Register with valid and invalid data read from Excel" data-provider="registrationData" finished-at="2026-10-26T20:33:15 IST" duration-ms="1889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[REG07]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abhi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tester]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[RANDOM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[at least 6 characters]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:33:15 IST" name="tearDown" finished-at="2026-10-26T20:33:15 IST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:33:15 IST" name="setUp" finished-at="2026-10-26T20:33:28 IST" duration-ms="12527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:33:28 IST" name="testRegistration" description="Register with valid and invalid data read from Excel" data-provider="registrationData" finished-at="2026-10-26T20:33:29 IST" duration-ms="1748" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[REG08]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abhi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tester]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[RANDOM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Different@99]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[do not match]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:33:29 IST" name="tearDown" finished-at="2026-10-26T20:33:30 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:33:30 IST" name="setUp" finished-at="2026-10-26T20:33:35 IST" duration-ms="5227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:33:35 IST" name="testRegistration" description="Register with valid and invalid data read from Excel" data-provider="registrationData" finished-at="2026-10-26T20:33:38 IST" duration-ms="2659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[REG09]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abhi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tester]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[abhineshabhi01@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ERROR]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[already exists]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegistrationTest@5dd6264]" started-at="2026-10-26T20:33:38 IST" name="tearDown" finished-at="2026-10-26T20:33:38 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.RegistrationTest -->
+    </test> <!-- Demo Web Shop Tests -->
+  </suite> <!-- DemoWebShop Regression Suite -->
+</testng-results>
